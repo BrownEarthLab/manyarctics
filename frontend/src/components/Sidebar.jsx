@@ -282,41 +282,105 @@ const Sidebar = ({ onLayerToggle, isThematicMode, onThematicModeToggle, isSideba
       </button>
 
       {showAboutPopup && (
-        <Popup title="About Arctic Map" onClose={() => setShowAboutPopup(false)}>
-          <p>
-            Arctic Map is a tool for exploring & analyzing a robust collection of 80+ cleaned, geospatial datasets related to the Arctic region.
-            Explore the app's following features: 
-          </p>
-          <ul style={{ paddingLeft: '20px', fontSize: '0.9em' }}>
-            <li>
-              <strong>Layers:</strong> Toggle layers on and off to visualize different datasets.
-            </li>
-            <li>
-              <strong>Spatial Query:</strong> Use the drawing tools to select an area and find intersecting features.
-            </li>
-            <li>
-              <strong>Download Data:</strong> Download entire datasets as zipped shapefiles and custom areas/queries as GeoJSON files. 
-            </li>
-            <li>
-              <strong>Thematic Map:</strong> Switch to Thematic Mode to color map layers based on attribute data.
-            </li>
-            <li>
-              <strong>Search:</strong> Use the search bar to find locations and features of interest.
-            </li>
-          </ul>
+        <Popup title="About The Many Arctics Map" onClose={() => setShowAboutPopup(false)}>
+            <p>
+    <strong>The Many Arctics</strong> is a WebGIS tool for visualizing and
+    exploring spatial data layers compiled, cleaned, and managed through the
+    NSF-funded project{" "}
+    <a
+      href="https://nna-cpad.org/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Navigating the New Arctic: Convergent Pressures on Arctic Development
+    </a>.
+  </p>
 
-          <p>
-            This web application is a project of the <a href="https://nna-cpad.org/">CPAD consortium</a> and is licensed under the <a href="https://opensource.org/licenses/MIT">MIT License</a>.
-          </p>
+  <p>
+    The tool provides an interactive environment for exploring geospatial
+    datasets and includes the following features:
+  </p>
 
-          <p>
-            Credits: Developed by Brown University students Soujanya Aryal, Noreen Chen, and Advait Mishra.
-          </p>
-        </Popup>
-      )}
+  <ul style={{ paddingLeft: "20px", fontSize: "0.9em" }}>
+    <li>
+      <strong>Layer Visualization:</strong> Toggle individual data layers
+      on and off to explore different geographic features and datasets.
+    </li>
 
-      {showPopup && (
-        <Popup
+    <li>
+      <strong>Attribute Filtering:</strong> Select attributes and use
+      query boxes to filter datasets based on specific criteria.
+    </li>
+
+    <li>
+      <strong>Spatial Query:</strong> Use the polygon drawing tool to
+      define a subregion on the map and identify spatial features
+      within the selected area.
+    </li>
+
+    <li>
+      <strong>Data Download:</strong> Download complete datasets as
+      zipped shapefiles or export filtered results and spatial queries
+      as GeoJSON files.
+    </li>
+
+    <li>
+      <strong>Thematic Mapping:</strong> Switch to Thematic Mode to
+      visualize environmental data through color-coded hexagons.
+      The hexagonal data layers contain previously summarized
+      environmental attributes, allowing users to explore their
+      spatial patterns.
+    </li>
+
+    <li>
+      <strong>Search:</strong> Use the search bar to find locations
+      and geographic features of interest.
+    </li>
+  </ul>
+
+  <p>
+    The Many Arctics is a project of the{" "}
+    <a
+      href="https://nna-cpad.org/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      CPAD Consortium
+    </a>{" "}
+    and is licensed under the{" "}
+    <a
+      href="https://opensource.org/licenses/MIT"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      MIT License
+    </a>.
+  </p>
+
+  <hr />
+
+  <h4>Project Credits</h4>
+
+  <p>
+    <strong>Database Modeling and Conceptualization:</strong>
+    <br />
+    Seda Salap-Ayca
+  </p>
+
+  <p>
+    <strong>Web Development:</strong>
+    <br />
+    V1: Soujanya Aryal and Noreen Chen
+    <br />
+    V1.1 (Accessibility Enhancements): Advait Mishra
+  </p>
+
+  <p>
+    <strong>Data Cleaning and Metadata Generation:</strong>
+    <br />
+    Caroline McCool, Qizhi Sun, and Yuechuan Yang
+  </p>
+</Popup>
           title={`${formatLayerName(activeLayerForAttributeTable)} - Attribute Table`}
           onClose={() => setShowPopup(false)}
         >
