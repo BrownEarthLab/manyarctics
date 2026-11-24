@@ -324,7 +324,7 @@ const Sidebar = ({ onLayerToggle, isThematicMode, onThematicModeToggle, isSideba
     <br />
     Caroline McCool, Qizhi Sun, and Yuechuan Yang
   </p>
-</Popup>
+
           title={`${formatLayerName(activeLayerForAttributeTable)} - Attribute Table`}
           onClose={() => setShowPopup(false)}
         >
