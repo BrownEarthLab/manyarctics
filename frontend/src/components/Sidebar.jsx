@@ -284,80 +284,24 @@ const Sidebar = ({ onLayerToggle, isThematicMode, onThematicModeToggle, isSideba
       {showAboutPopup && (
         <Popup title="About The Many Arctics Map" onClose={() => setShowAboutPopup(false)}>
             <p>
-    <strong>The Many Arctics</strong> is a WebGIS tool for visualizing and
-    exploring spatial data layers compiled, cleaned, and managed through the
-    NSF-funded project{" "}
-    <a
-      href="https://nna-cpad.org/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Navigating the New Arctic: Convergent Pressures on Arctic Development
-    </a>.
-  </p>
-
-  <p>
-    The tool provides an interactive environment for exploring geospatial
-    datasets and includes the following features:
-  </p>
-
-  <ul style={{ paddingLeft: "20px", fontSize: "0.9em" }}>
-    <li>
-      <strong>Layer Visualization:</strong> Toggle individual data layers
-      on and off to explore different geographic features and datasets.
-    </li>
-
-    <li>
-      <strong>Attribute Filtering:</strong> Select attributes and use
-      query boxes to filter datasets based on specific criteria.
-    </li>
-
-    <li>
-      <strong>Spatial Query:</strong> Use the polygon drawing tool to
-      define a subregion on the map and identify spatial features
-      within the selected area.
-    </li>
-
-    <li>
-      <strong>Data Download:</strong> Download complete datasets as
-      zipped shapefiles or export filtered results and spatial queries
-      as GeoJSON files.
-    </li>
-
-    <li>
-      <strong>Thematic Mapping:</strong> Switch to Thematic Mode to
-      visualize environmental data through color-coded hexagons.
-      The hexagonal data layers contain previously summarized
-      environmental attributes, allowing users to explore their
-      spatial patterns.
-    </li>
-
-    <li>
-      <strong>Search:</strong> Use the search bar to find locations
-      and geographic features of interest.
+              The Many Arctics is a WebGIS tool for visualizing and exploring spatial data layers compiled, cleaned, and managed through the NSF-funded project Navigating the New Arctic: Convergent Pressures on Arctic Development
+            </p>
+          <p> The tool provides an interactive environment for exploring geospatial datasets and includes the following features: </p>
+          <ul style={{ paddingLeft: "20px", fontSize: "0.9em" }}>
+            <li> Layer Visualization: Toggle individual data layers on and off to explore different geographic features and datasets.
+            </li>
+            <li> Attribute Filtering: Select attributes and use query boxes to filter datasets based on specific criteria.
+          </li>
+          <li> Spatial Query:Use the polygon drawing tool to define a subregion on the map and identify spatial features within the selected area.
+          </li>
+          <li> Data Download:Download complete datasets as zipped shapefiles or export filtered results and spatial queries as GeoJSON files.
+          </li>
+          <li> Thematic Mapping: Switch to Thematic Mode to visualize environmental data through color-coded hexagons. The hexagonal data layers contain previously summarized environmental attributes, allowing users to explore their spatial patterns.</li>
+      <li> Search: Use the search bar to find locations and geographic features of interest.
     </li>
   </ul>
 
-  <p>
-    The Many Arctics is a project of the{" "}
-    <a
-      href="https://nna-cpad.org/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      CPAD Consortium
-    </a>{" "}
-    and is licensed under the{" "}
-    <a
-      href="https://opensource.org/licenses/MIT"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      MIT License
-    </a>.
-  </p>
-
-  <hr />
+    <hr />
 
   <h4>Project Credits</h4>
 
